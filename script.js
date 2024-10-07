@@ -9,7 +9,7 @@
     measurementId: "G-LC6WJ9Q6TW"
   };
 
-firebase.initializeApp(firebaseConfig);
+const firebase.initializeApp(firebaseConfig);
 
 // Referência para a coleção de usuários
 const database = firebase.database();
