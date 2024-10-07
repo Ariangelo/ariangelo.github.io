@@ -2,24 +2,20 @@
 <html>
 <head>
   <title>Cadastro de Usuários</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
 </head>
 <body>
-  <h1>Cadastro</h1>
-  <form id="userForm">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-    <br>
+  <h1>Cadastro de Usuários</h1>
+  <form id="cadastroForm">
+    <input type="text" id="nome" placeholder="Nome" required />
+    <input type="email" id="email" placeholder="Email" required />
     <button type="submit">Cadastrar</button>
   </form>
 
-  <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database-compat.js"></script>
   <script>
-    // Configuração do Firebase (substitua pelos seus dados)
-   const firebaseConfig = {
+    // Configuração do Firebase
+     const firebaseConfig = {
     apiKey: "AIzaSyDBbMoxMMvVT1dHQywU_5KPUJoADJcKHXU",
     authDomain: "talento-tech-fa130.firebaseapp.com",
     projectId: "talento-tech-fa130",
@@ -28,29 +24,29 @@
     appId: "1:110745915583:web:155bc5f0b8e731416b360a",
     measurementId: "G-LC6WJ9Q6TW"
   };
+    // Inicializar Firebase
     firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
 
-    // Referência para a raiz do banco de dados
-    const database = firebase.database();
-
-    // Função para adicionar um novo usuário
-    function addUser(name, email) {
-      database.ref('usuarios').push({
-        name: name,
-        email: email
-      });
-    }
-
-    // Event listener para o formulário
-    document.getElementById('userForm').addEventListener('submit', (event) => {
+    // Adicionar usuário ao Firestore
+    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
       event.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      addUser(name, email);
-      // Limpar os campos do formulário
-      document.getElementById('name').value = '';
-      document.getElementById('email').value = '';
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+
+      db.collection("usuarios").add({
+        nome: nome,
+        email: email
+      }).then(function() {
+        alert("Usuário cadastrado com sucesso!");
+      }).catch(function(error) {
+        console.error("Erro ao cadastrar usuário: ", error);
+      });
     });
   </script>
 </body>
 </html>
+
+
+
+
