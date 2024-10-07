@@ -35,7 +35,7 @@
       var email = document.getElementById('email').value;
 
       db.collection("usuarios").add({
-        nome: nome,
+        name: nome,
         email: email
       }).then(function() {
         alert("Usuário cadastrado com sucesso!");
