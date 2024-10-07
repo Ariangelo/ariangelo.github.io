@@ -1,7 +1,14 @@
 // Configuração do Firebase (substitua pelos seus dados)
-const firebaseConfig = {
-  // ...
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyDBbMoxMMvVT1dHQywU_5KPUJoADJcKHXU",
+    authDomain: "talento-tech-fa130.firebaseapp.com",
+    projectId: "talento-tech-fa130",
+    storageBucket: "talento-tech-fa130.appspot.com",
+    messagingSenderId: "110745915583",
+    appId: "1:110745915583:web:155bc5f0b8e731416b360a",
+    measurementId: "G-LC6WJ9Q6TW"
+  };
+
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
