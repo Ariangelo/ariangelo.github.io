@@ -55700,7 +55700,7 @@ s.toString
 return B.c.aB(r,s)},
 $S:338}
 A.yS.prototype={
-P(a){return new A.q5(B.C_,"Flutter Demo",A.a8p(null,A.aem(B.M,B.BP),!0),null)}}
+P(a){return new A.q5(B.C_,"Demonstra\xe7\xe3o Flutter",A.a8p(null,A.aem(B.M,B.BP),!0),null)}}
 A.qk.prototype={
 aw(){return new A.u8(B.q)}}
 A.u8.prototype={
@@ -55708,8 +55708,8 @@ O9(){this.aH(new A.ZA(this))},
 P(a){var s=null,r=A.az(a).ax,q=r.y2
 r=q==null?r.c:q
 this.a.toString
-q=A.a8m("Flutter Demo Home Page",s)
-return new A.rj(new A.o8(q,r,new A.Fu(s,s,1/0,56),s),A.JD(A.aes(A.a([B.JP,A.a8m(""+this.d,A.az(a).p2.e)],t.nA),B.of),s,s),A.a6q(B.ym,!1,this.gO8(),"Increment"),s)}}
+q=A.a8m("Primeiro programa Flutter",s)
+return new A.rj(new A.o8(q,r,new A.Fu(s,s,1/0,56),s),A.JD(A.aes(A.a([B.JP,A.a8m(""+this.d,A.az(a).p2.e)],t.nA),B.of),s,s),A.a6q(B.ym,!1,this.gO8(),"Incrementar"),s)}}
 A.ZA.prototype={
 $0(){++this.a.d},
 $S:0}
@@ -59642,7 +59642,7 @@ B.IV=new A.i(!0,B.z,null,"Roboto",B.A,null,null,null,null,null,null,null,null,nu
 B.Ij=new A.i(!0,B.m,null,"Roboto",B.A,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
 B.It=new A.i(!0,B.m,null,"Roboto",B.A,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.JO=new A.cd(B.Jg,B.Gq,B.Ho,B.Ii,B.Iv,B.FR,B.GY,B.FV,B.I2,B.II,B.Hy,B.IK,B.IV,B.Ij,B.It)
-B.JP=new A.mG("You have pushed the button this many times:",null,null,null,null)
+B.JP=new A.mG("Voc\xeas pressionou o bot\xe3o este n\xfamero de vezes:",null,null,null,null)
 B.Mm=new A.W8(0,"system")
 B.JQ=new A.rX(null)
 B.em=new A.Bx(0,"clamp")
